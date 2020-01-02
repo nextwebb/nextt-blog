@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+	<title>{{global.key}}</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style>
+		.gray-box {
+			background:#f9f9f9;
+			border:1px solid #ddd;
+			border-radius:3px;
+			padding:12px;
+			margin-top: 32px;
+		}
+
+		img {
+			max-width: 260px;
+		}
+	</style>
+</head>
+
+<body class="container">
+	<div id="vertex-container" class="row">
+
+		<div class="col-md-8 col-md-offset-2" style="text-align:center;margin-bottom:48px">
+			<h1>Welcome to Vertex 360</h1>
+			<hr />
+			<p>
+				You are currently looking at the <strong style="color:red">home.mustache</strong> file in the 'views' directory of your project. This template is rendered from the <strong style="color:red">page.js</strong> route file which is in the <strong style="color:red">routes</strong> folder and uses the Mustache templating engine.</h4>
+			</p>
+			<small>Click to enlarge</small><br />
+			<a target="_blank" href="https://cdn.turbo360-dev.com/images/project-structure.png">
+				<img src="https://cdn.turbo360-dev.com/images/project-structure.png" />
+			</a>
+
+			<div class="gray-box">
+				<h3 style="margin-top:0px">Page Configurations</h3>
+				<p>
+					The dynamic content of each page can be configured within json files found in the <strong style="color:red">pages</strong> folder. <h4 style="color:red">{{page.text}}</h4>
+				</p>
+				<small>Click to enlarge</small><br />
+				<a target="_blank" href="https://cdn.turbo360-dev.com/images/home-json.png">
+					<img src="https://cdn.turbo360-dev.com/images/home-json.png" />
+				</a>
+			</div>
+
+			<div class="gray-box">
+				<h3 style="margin-top:0px">Global Configuration</h3>
+				<p>
+					The global configuration json file is used for configuring details that pertain to the <em>entire</em> site such as the "title", "favicon", and such.
+				</p>
+				<small>Click to enlarge</small><br />
+				<a target="_blank" href="https://cdn.turbo360-dev.com/images/global-json.png">
+					<img src="https://cdn.turbo360-dev.com/images/global-json.png" />
+				</a>
+
+				<p style="margin-top:24px">
+					In this example, the "title" meta tag is populated by the global.json data as illustrated below:
+				</p>
+
+				<small>Click to enlarge</small><br />
+				<a target="_blank" href="https://cdn.turbo360-dev.com/images/title.png">
+					<img src="https://cdn.turbo360-dev.com/images/title.png" />
+				</a>
+
+			</div>
+
+		</div>
+	</div>
+
+  <!-- Vertex library for enabling site updates from https://www.vertex360.co -->
+  <script type="text/javascript" src="https://cdn.turbo360-dev.com/dist/vertex.min.js"></script>
+</body>
+</html>
